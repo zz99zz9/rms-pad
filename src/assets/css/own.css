@@ -1,0 +1,5 @@
+/*cancel类按钮*/
+.cbtn{height:44px;width:160px;line-height:44px;text-align:center;color:#000;background:#eee;border-radius:3px;font-size:18px;display:block;margin:28px auto;}
+.cbtn:active{background:#dbdbdb;}
+/*标题*/
+h1{font-size:44px;color:#444;}
