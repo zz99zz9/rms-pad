@@ -16,6 +16,9 @@ return {
 time:'10'
 };
   	},
+    created(){
+		   this.taketime()
+	   },
   methods: {
  taketime(){
   		let nowt = new Date();

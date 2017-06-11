@@ -1,12 +1,20 @@
 <template>
   <div id="app">
+<transition>
     <router-view></router-view>
+  </transition>
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'app'
+  name: 'app',
+  data(){ 
+    return{
+
+    }
+  }
 }
 </script>
 
@@ -17,4 +25,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 
 }
+
 </style>

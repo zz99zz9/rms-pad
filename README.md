@@ -1,21 +1,29 @@
-# rmspad
+# 本宿酒店管理系统pad版（前端）
 
-> A Vue.js project
+> 实现酒店方 pad 自动下单、支付
 
-## Build Setup
+## 项目结构
 
 ``` bash
-# install dependencies
-npm install
+api
+# 模拟api功能的文件，需要上传到指定的空间模拟jsonp获取数据
 
-# serve with hot reload at localhost:8080
-npm run dev
+build
+# 生成发布文件的js
 
-# build for production with minification
-npm run build
+config
+# 配置文件
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+src
+# 项目文件
+src->assets   
+# 静态资源
+src->components
+# 组件目录
+src->pages
+# 页面文件
+src->router
+# 路由编辑
+src->vuex
+# store.js 公共资源存放
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

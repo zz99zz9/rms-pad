@@ -11,10 +11,14 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Vuex from 'vuex'
 import store from './vuex/store'
 import axios from 'axios'
+//import './assets/js/util.js'
 
 Vue.config.productionTip = false
 Vue.prototype.$ajax = axios
+
+
 /* eslint-disable no-new */
+
 Vue.use(Vuex)
 Vue.use(ElementUI)
 Vue.use(VueAwesomeSwiper)

@@ -25,7 +25,7 @@ export default {
     }
   },beforeCreate(){
 //console.log("#_#")
-//uname.value="ff";
+
   },
   methods: {
     //验证登录信息
@@ -33,7 +33,7 @@ export default {
       if(uname.value ==upass.value ){
        // console.log("ok")
   this.$router.push('/Index')
-  timer()
+
       }else{
       
      //   console.log("over")

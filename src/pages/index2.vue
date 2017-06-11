@@ -2,7 +2,7 @@
   <div class="index">
   <!--页顶-->
   <div class="header ">
-<div class="welcome ellipsis2 " @click="timer()">{{welcome}}</div>
+<div class="welcome ellipsis2 ">{{welcome}}</div>
  <div class="timer " id="timer">
 <div class='date'>
 <span class='day' id="days">{{day}}</span>
@@ -74,7 +74,9 @@ export default {
   },beforeCreate(){
     
   },
-
+created(){
+    this.timer()
+  },
   methods: {
     //验证登录信息
     checku() {

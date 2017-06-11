@@ -10,7 +10,7 @@
 <li>微信支付<br><img :src="data.weixin"></li>
 	</ul>
 	<div class="c"></div>
-	<div class="info" @click="taketime()">
+	<div class="info">
 		入住时间：{{data.stime}}
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		退房时间：{{data.etime}}<br>
@@ -46,6 +46,9 @@ return {
 		}
 };
   	},
+	   created(){
+		   this.taketime()
+	   },
   methods: {
   	taketime(){
   		let nowt = new Date();

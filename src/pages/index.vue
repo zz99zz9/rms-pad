@@ -2,7 +2,7 @@
   <div class="index">
   <!--页顶-->
   <div class="header ">
-<div class="welcome ellipsis2 " @click="timer()">{{welcome}}</div>
+<div class="welcome ellipsis2 ">{{welcome}}</div>
  <div class="timer ">
 
 <div class='date'>
@@ -13,7 +13,7 @@
 </div>
   </div> 
 <!--宣传图片-->
-<div class="ed">
+<div class="ed" @click="sf()">
 <swiper :options="swiperOption" ref="mySwiper">
     <!-- slides -->
     <swiper-slide><div class="pic"></div></swiper-slide>
@@ -37,7 +37,8 @@
   <img src='../assets/img/qr.svg'>
   <div class='txt'>微信扫一扫<br>关注D&K客房<br>微信公众号</div>
 </div>
- <span id="CountDown" class="hide">10</span>
+
+
 <!---->
   </div>
 
@@ -74,10 +75,15 @@ export default {
     }
   },beforeCreate(){
 //console.log("#_#")
-
+//this.timer()
 
   },
+  computed:{
 
+  },
+  created(){
+    this.timer()
+  },
   methods: {
   timer(){
   	let dt = new Date();
@@ -108,9 +114,23 @@ export default {
   this.day=mon+"月"+day+"日";
   this.week ="星期"+week;
   setTimeout(()=>{this.timer()},1000)
-  }
+  },
+  sf () {
+ this.$.ajax({
+        method:'post',
+        url:'/user',
+        data:{
+          name:'wise',
+          info:'wrong'
+        }
+ 
+    });
 
   }
+},
+reday:{
+
+}
 
 }
 
